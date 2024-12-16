@@ -1,0 +1,27 @@
+[flake8]
+max-complexity=14
+max-line-length=100
+exclude =
+    .git,
+    __pycache__,
+    __init__.py,
+    .venv/*,
+    .interos/*,
+    tests/*
+extend-ignore =
+    # Allow whitespace before ":".
+    E203,
+    # Ignore line too long.
+    E501,
+    # Ignore line break before binary operator.
+    W503
+select =
+    B,
+    B9,
+    BLK,
+    C,
+    E,
+    F,
+    I,
+    S,
+    W

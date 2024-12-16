@@ -1,0 +1,24 @@
+[tool.isort]
+profile = "black"
+# The max length of an import line (Default: 79)
+line_length = 100
+# Do not force the number of imports to be grid wrapped (Default: 0)
+force_grid_wrap = 0
+# Multi line output (Default: 0=grid)
+multi_line_output = 3 # vert-hanging
+# The number of lines to place between sections (Default: 1)
+lines_between_sections = 1
+# Use parentheses for line continuation on length limit instead of backslashes (Default: False)
+use_parentheses = true
+# Includes a trailing comma on multi line imports that include parentheses (Default: False)
+include_trailing_comma = true
+# Inserts a blank line before a comment following an import (Default: False)
+ensure_newline_before_comments = true
+# Force all imports to be sorted alphabetically within a section (Default: False)
+force_alphabetical_sort_within_sections = true
+
+[tool.black]
+# How many characters per line to allow (Default: 88)
+line-length = 100
+# Python versions that should be supported by Black's output
+target-version = ["py311"]
